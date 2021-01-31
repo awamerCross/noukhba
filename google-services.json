@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "325784796204",
+    "project_id": "noukhbah-de03e",
+    "storage_bucket": "noukhbah-de03e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325784796204:android:052489d93f07ea96342589",
+        "android_client_info": {
+          "package_name": "app.aait.Noukhbah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325784796204-i2ab9o2ktlg33qbbh8eod6a52dnn65gb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB04tgaOdx-HVX4CqmQU1d7iiw3isniW3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325784796204-i2ab9o2ktlg33qbbh8eod6a52dnn65gb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

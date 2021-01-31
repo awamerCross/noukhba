@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "النخبة",
+    "slug": "AL-Noukhbah",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "2.0.8",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.aait.Noukhba",
+      "infoPlist": {
+        "NSCameraUsageDescription": "We need this permession to add photos to your ads.",
+        "NSLocationWhenInUseUsageDescription": "app need location to show the nearest ads of you.",
+        "NSLocationAlwaysUsageDescription": "app need location to show the nearest ads of you.",
+        "NSMotionUsageDescription": "app need location to show the nearest ads of you.",
+        "NSPhotoLibraryAddUsageDescription": "We need this permession to add photos to your ads.",
+        "NSPhotoLibraryUsageDescription": "We need this permession to add photos to your ads"
+      }
+    },
+    "android": {
+      "package": "app.aait.Noukhbah",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [ "CAMERA", "RECORD_AUDIO", "CAMERA_ROLL","READ_CONTACTS","READ_PHONE_STATE" ],
+      "versionCode": 16,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBCtrxqozj9xLkL58Frh0Gl4fiQZ_oATZI"
+        }
+      }
+    }
+  }
+}
