@@ -104,7 +104,7 @@ class Tabs extends React.Component {
     return (
       <Footer>
           <FooterTab style={styles.footer_Tab}>
-            <Button onPress={() => this.chickUser('home')}
+            <Button onPress={() => this.props.navigation.navigate('home')}
                 style={{
                     borderTopWidth   : this.state.pageName === 'home'? 2 : 0,
                     borderTopColor   : this.state.pageName === 'home'? '#2272bd' : '#2272bd',

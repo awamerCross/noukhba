@@ -7,7 +7,7 @@
       "ios",
       "android"
     ],
-    "version": "2.0.8",
+    "version": "2.0.9",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -37,7 +37,7 @@
       "package": "app.aait.Noukhbah",
       "googleServicesFile": "./google-services.json",
       "permissions": [ "CAMERA", "RECORD_AUDIO", "CAMERA_ROLL","READ_CONTACTS","READ_PHONE_STATE" ],
-      "versionCode": 16,
+      "versionCode": 17,
       "config": {
         "googleMaps": {
           "apiKey": "AIzaSyBCtrxqozj9xLkL58Frh0Gl4fiQZ_oATZI"
