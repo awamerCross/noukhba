@@ -36,8 +36,18 @@
     "android": {
       "package": "app.aait.Noukhbah",
       "googleServicesFile": "./google-services.json",
-      "permissions": [ "CAMERA", "RECORD_AUDIO", "CAMERA_ROLL","READ_CONTACTS","READ_PHONE_STATE" ],
-      "versionCode": 17,
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "CAMERA_ROLL",
+        "READ_CONTACTS",
+        "READ_PHONE_STATE",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "READ_INTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"],
+      "versionCode": 8,
       "config": {
         "googleMaps": {
           "apiKey": "AIzaSyBCtrxqozj9xLkL58Frh0Gl4fiQZ_oATZI"

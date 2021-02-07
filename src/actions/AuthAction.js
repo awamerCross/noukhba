@@ -1,22 +1,43 @@
 import axios from 'axios';
 import { AsyncStorage } from 'react-native';
 import CONST from '../consts';
+import {Toast} from "native-base";
 
-export const userLogin = ({phone, password, token}) => {
-    return (dispatch) => {
-        dispatch({type: 'user_login'});
+export const userLogin = ({phone, password, token}, props) => {
+    return async (dispatch) => {
+        await dispatch({type: 'user_login'});
 
              axios({
                 url       : `${CONST.url}auth/login`,
                 method    : 'POST',
                 data :{
-                    phone, password, 
+                    phone, password,
                     device_id   : token
                 }
             }).then(response => {
-               
-                  handelLogin(dispatch, response.data)
-               
+
+                  handelLogin(dispatch, response.data);
+
+                 Toast.show({
+                     text: response.data.message,
+                     type: response.data.success ? "success" : "danger",
+                     duration: 3000,
+                     textStyle   : {
+                         color       : "white",
+                         fontFamily  : 'CairoRegular',
+                         textAlign   : 'center'
+                     }
+                 });
+
+                 console.log('response ----------', response.data)
+
+                 if(response.data.active === 0){
+                     props.navigation.navigate('activeacount',
+                         {
+                             user_id : response.data.user_id
+                         });
+                 }
+
             }).catch(err => {
 
                 console.warn(  'error Login'  , err)

@@ -6,7 +6,7 @@ export default (state = INITIAL_STATE, action) => {
         case ('login_user') :
             return ({...state, loading: true});
         case ('login_failed') :
-            return ({...state, loading: false, user: action.error });
+            return ({...state, loading: false, user: null });
         case ('login_success') :
             return ({...state, loading: false, user: action.data });
         case ('user_logout') :

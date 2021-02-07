@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View,Image,TouchableOpacity, AsyncStorage,KeyboardAvoidingView,I18nManager } from 'react-native';
+import { StyleSheet, Text, View,Image,TouchableOpacity, AsyncStorage,KeyboardAvoidingView,I18nManager, ActivityIndicator } from 'react-native';
 import { Container, Content, Form, Item, Input, Label, Icon,Toast } from 'native-base'
 import { connect } from 'react-redux';
 import { userLogin, profile } from '../actions'
@@ -27,12 +27,12 @@ class Login extends Component {
     let isError = false;
     let msg = '';
 
-    if (this.state.phone.length <= 0 || this.state.phone.length !== 10) {
+    if (this.state.phone.length <= 0) {
         isError   = true;
-        msg       = 'رقم الهاتف غير صحيح';
+        msg       = 'ادخل رقم الهاتف';
     }else if (this.state.password.length <= 0) {
         isError   = true;
-        msg       = 'كلمة السر مطلوبه';
+        msg       = 'ادخل كلمة المرور';
     }
     if (msg != ''){
         Toast.show({
@@ -51,16 +51,16 @@ class Login extends Component {
 
   onLoginPressed() {
 
-    this.setState({ spinner: true });
-
     const err = this.validate();
 
     if (!err){
-        this.setState({ spinner: false });
+        this.setState({ spinner: true });
         const {phone, password, token} = this.state;
-        this.props.userLogin({ phone, password, token });
-    }else{
-        this.setState({ spinner: false });
+        this.props.userLogin({ phone, password, token }, this.props).then(() =>{
+            this.setState({spinner: false});
+        }).catch(() =>{
+            this.setState({spinner: false});
+        });
     }
 
   }
@@ -96,7 +96,7 @@ class Login extends Component {
     }
 
   componentWillReceiveProps(newProps){
-    this.setState({ spinner: false });
+
     if (newProps.auth !== null && newProps.auth.success == true){
 
       if (this.state.userId === null){
@@ -106,6 +106,7 @@ class Login extends Component {
 
       this.props.navigation.navigate('DrawerNavigator');
     }
+
 
     if (newProps.auth !== null) {
         Toast.show({
@@ -136,14 +137,11 @@ class Login extends Component {
     return (
       <Container>
 
-        <Spinner
-            visible           = { this.state.spinner }
-        />
         <NavigationEvents onWillFocus={() => this.onFocus()} />
 
         <Content contentContainerStyle={{ flexGrow: 1 }} style={styles.contentView}>
             <TouchableOpacity onPress={()=>this.props.navigation.goBack()} style={{flex : 1 , margin : 10}}>
-                <Icon name={'arrow-back'} style={{color : '#fff'}}></Icon>
+                <Icon name={'arrow-back'} style={{color : '#fff'}}/>
             </TouchableOpacity>
             <KeyboardAvoidingView behavior={'padding'} style={{ flex : 1 }}>
             <Image style={styles.logo} resizeMode={'stretch'} source={require('../../assets/logo-layer.png')}/>
@@ -161,8 +159,15 @@ class Login extends Component {
                       <Input autoCapitalize='none' value={ this.state.password } onChangeText={(password) => this.setState({password})} secureTextEntry style={styles.input}/>
                     </Item>
 
-                    <TouchableOpacity onPress={() => this.onLoginPressed()} style={styles.touchBtn}>
-                        <Text style={[ styles.textBtn, { color: '#FFF' } ]}>دخول</Text>
+                    <TouchableOpacity onPress={!this.state.spinner ? () => this.onLoginPressed() : null} style={styles.touchBtn}>
+                        {
+                            this.state.spinner ?
+                                <View style={{ padding : 7, alignItems : 'center', justifyContent : 'center', alignSelf : 'center' }}>
+                                    <ActivityIndicator size={20} color={'#fff'} />
+                                </View>
+                                :
+                                <Text style={[ styles.textBtn, { color: '#FFF' } ]}>دخول</Text>
+                        }
                     </TouchableOpacity>
 
                     <Text onPress={() => this.props.navigation.navigate('forgetpassword')} style={styles.textFont}>نسيت كلمة السر ؟</Text>

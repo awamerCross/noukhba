@@ -4,28 +4,14 @@
     <list default="true" id="59a69aeb-4e98-4601-b9c3-989f60a551c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReactotronConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactotronConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ChatRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChatRoom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DetailsAdv.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DetailsAdv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EditProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Favorite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Favorite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/AuthAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/AuthAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FormE3lan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormE3lan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Location.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Location.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MapLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MapLocation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Mune.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Mune.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyAdv.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyAdv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Notification.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Notification.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Setting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Setting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Terms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Terms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/consts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/consts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/AuthReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/AuthReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,11 +41,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/RootNavigator.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="228" column="6" selection-start-line="228" selection-start-column="6" selection-end-line="234" selection-end-column="6" />
+            <state relative-caret-position="1264">
+              <caret line="256" column="45" selection-start-line="256" selection-start-column="45" selection-end-line="256" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="56" column="41" lean-forward="true" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+                <element signature="n#!!block;n#componentWillMount#0;n#Login#0" />
+                <element signature="n#!!block;n#registerForPushNotificationsAsync#0;n#Login#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/actions/AuthAction.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reducers/AuthReducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -68,9 +89,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>I18nManager</find>
-      <find>isModalVisible</find>
-      <find>toggleVideo</find>
       <find>onFocus</find>
       <find>images</find>
       <find>photos</find>
@@ -98,6 +116,9 @@
       <find>blockUp</find>
       <find>dba261</find>
       <find>toggleModal</find>
+      <find>كلمة</find>
+      <find>phone</find>
+      <find>spinner</find>
     </findStrings>
     <replaceStrings>
       <replace>2272bd</replace>
@@ -110,8 +131,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="&lt;fba69d94-f9d2-4fa4-a83d-f038c7906128&gt;/website/css/style.css" />
-        <option value="$PROJECT_DIR$/app.json" />
-        <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/src/components/Home.js" />
         <option value="$PROJECT_DIR$/src/components/NewPassword.js" />
         <option value="$PROJECT_DIR$/src/components/ActiveAcount.js" />
@@ -122,28 +141,32 @@
         <option value="$PROJECT_DIR$/src/components/Commission.js" />
         <option value="$PROJECT_DIR$/src/components/Contact.js" />
         <option value="$PROJECT_DIR$/src/components/Mune.js" />
-        <option value="$PROJECT_DIR$/src/components/Login.js" />
         <option value="$PROJECT_DIR$/src/consts/index.js" />
         <option value="$PROJECT_DIR$/src/components/ChatRoom.js" />
         <option value="$PROJECT_DIR$/src/components/Profile.js" />
-        <option value="$PROJECT_DIR$/src/components/Register.js" />
         <option value="$PROJECT_DIR$/src/components/EditProfile.js" />
         <option value="$PROJECT_DIR$/src/components/Favorite.js" />
         <option value="$PROJECT_DIR$/src/components/Filter.js" />
         <option value="$PROJECT_DIR$/src/RootNavigator.js" />
         <option value="$PROJECT_DIR$/src/components/Terms.js" />
         <option value="$PROJECT_DIR$/src/components/Tabs.js" />
-        <option value="$PROJECT_DIR$/src/components/FormE3lan.js" />
         <option value="$PROJECT_DIR$/src/components/MapLocation.js" />
         <option value="$PROJECT_DIR$/src/components/ForgetPassword.js" />
         <option value="$PROJECT_DIR$/src/components/MyAdv.js" />
         <option value="$PROJECT_DIR$/src/components/Notification.js" />
-        <option value="$PROJECT_DIR$/ReactotronConfig.js" />
         <option value="$PROJECT_DIR$/src/components/Setting.js" />
         <option value="$PROJECT_DIR$/src/components/About.js" />
         <option value="$PROJECT_DIR$/src/components/Chat.js" />
         <option value="$PROJECT_DIR$/src/components/DetailsAdv.js" />
         <option value="$PROJECT_DIR$/src/components/Location.js" />
+        <option value="$PROJECT_DIR$/src/components/FormE3lan.js" />
+        <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/src/reducers/AuthReducer.js" />
+        <option value="$PROJECT_DIR$/App.js" />
+        <option value="$PROJECT_DIR$/ReactotronConfig.js" />
+        <option value="$PROJECT_DIR$/src/components/Register.js" />
+        <option value="$PROJECT_DIR$/src/components/Login.js" />
+        <option value="$PROJECT_DIR$/src/actions/AuthAction.js" />
       </list>
     </option>
   </component>
@@ -175,25 +198,13 @@
         <subPane>
           <expand>
             <path>
-              <item name="nokhba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nokhba" type="462c0819:PsiDirectoryNode" />
+              <item name="noukhba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="noukhba" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="nokhba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nokhba" type="462c0819:PsiDirectoryNode" />
+              <item name="noukhba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="noukhba" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nokhba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nokhba" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nokhba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nokhba" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="consts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -244,14 +255,15 @@
       <workItem from="1575968891345" duration="15852000" />
       <workItem from="1604834506809" duration="7818000" />
       <workItem from="1604934026771" duration="7413000" />
+      <workItem from="1612706812136" duration="2199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49037000" />
+    <option name="totallyTimeSpent" value="51236000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1094" height="809" extended-state="1" />
+    <frame x="0" y="23" width="1094" height="809" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23308958" />
@@ -298,23 +310,6 @@
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="56" column="53" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -367,13 +362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="142" column="39" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ChatRoom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -391,13 +379,6 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="253" column="119" selection-start-line="253" selection-start-column="119" selection-end-line="253" selection-end-column="119" />
         </state>
       </provider>
     </entry>
@@ -455,16 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/FormE3lan.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="1166" column="35" lean-forward="true" selection-start-line="1166" selection-start-column="35" selection-end-line="1166" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/MapLocation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -485,13 +456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ForgetPassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="117" column="36" selection-start-line="117" selection-start-column="30" selection-end-line="117" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/BankTransfer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -506,13 +470,6 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReactotronConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -600,10 +557,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RootNavigator.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ForgetPassword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="90" column="123" selection-start-line="90" selection-start-column="118" selection-end-line="90" selection-end-column="123" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
-          <caret line="228" column="6" selection-start-line="228" selection-start-column="6" selection-end-line="234" selection-end-column="6" />
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="44" column="28" lean-forward="true" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/FormE3lan.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="838" column="5" lean-forward="true" selection-start-line="838" selection-start-column="5" selection-end-line="838" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#FormE3lan#0" />
+            <element signature="e#4018#4817#0" />
+            <element signature="e#4876#4917#0" />
+            <element signature="n#!!block;n#getColors#0;n#FormE3lan#0" />
+            <element signature="n#!!block;n#renderImage#0;n#FormE3lan#0" />
+            <element signature="n#!!block;n#onValueChange#0;n#FormE3lan#0" />
+            <element signature="n#!!block;n#onValueChangeCity#0;n#FormE3lan#0" />
+            <element signature="n#!!block;n#Value_sub_category#0;n#FormE3lan#0" />
+            <element signature="n#!!block;n#Value_All_Color#0;n#FormE3lan#0" />
+            <element signature="n#!!block;n#delete_img#0;n#FormE3lan#0" />
+            <element signature="n#!!block;n#delete_video#0;n#FormE3lan#0" />
+            <element signature="e#11881#13737#0" />
+            <element signature="e#36271#45951#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReactotronConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/AuthReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RootNavigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="79" column="20" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1264">
+          <caret line="256" column="45" selection-start-line="256" selection-start-column="45" selection-end-line="256" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="56" column="41" lean-forward="true" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="n#!!block;n#componentWillMount#0;n#Login#0" />
+            <element signature="n#!!block;n#registerForPushNotificationsAsync#0;n#Login#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/AuthAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

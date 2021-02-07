@@ -143,10 +143,12 @@ class Register extends Component {
     }else if (this.state.phone.length <= 0) {
         isError   = true;
         msg       = 'إدخال رقم الهاتف';
-    }else if (this.state.phone.length !== 10){
-      isError   = true;
-      msg       = 'رقم الهاتف لا يقل عن 10 أرقام';
-    }else if (this.state.country_id <= 0) {
+    }
+    // else if (this.state.phone.length !== 10){
+    //   isError   = true;
+    //   msg       = 'رقم الهاتف لا يقل عن 10 أرقام';
+    // }
+    else if (this.state.country_id <= 0) {
       isError   = true;
       msg       = 'إختر البلد';
     }else if (this.state.city_id <= 0) {
@@ -260,7 +262,7 @@ class Register extends Component {
                 </Item>
                 <Item floatingLabel style={styles.item}>
                   <Label style={styles.label}>رقم الجوال</Label>
-                  <Input maxLength={10} style={styles.input} onChangeText={(phone) => this.setState({ phone })} keyboardType={'number-pad'}/>
+                  <Input style={styles.input} onChangeText={(phone) => this.setState({ phone })} keyboardType={'number-pad'}/>
                 </Item>
 
                 <View style={styles.viewPiker}>
