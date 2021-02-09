@@ -287,7 +287,7 @@ class BankTransfer extends Component {
                         <Item floatingLabel style={[styles.item , styles.itemModel]}>
                             <Label style={[styles.label , styles.labelModel]}>السعر</Label>
                             <Input    keyboardType='numeric'
-                                      style={[styles.input , styles.inputModel]} onChangeText={(price) => this.setState({ is_ammount :  ((3/ 100) * price).toFixed(2) })} auto-capitalization={false}/>
+                                      style={[styles.input , styles.inputModel]} onChangeText={(price) => this.setState({ is_ammount : this.toEnglishDigits(price) })} auto-capitalization={false}/>
                         </Item>
                         <Text style={{textAlign:'center', alignSelf:'center', color :'#fff' , fontSize:24,marginVertical: 30}}>فإن المبلغ المستحق دفعه هو  </Text>
                         <Text style={{textAlign:'center', alignSelf:'center', color :'#fff' , fontSize:30}}>{ this.state.is_ammount } ريال</Text>
@@ -309,6 +309,22 @@ class BankTransfer extends Component {
       </Container>
     );
   }
+
+      toEnglishDigits(str) {
+
+        // convert persian digits [۰۱۲۳۴۵۶۷۸۹]
+        var e = '۰'.charCodeAt(0);
+        str = str.replace(/[۰-۹]/g, function(t) {
+            return t.charCodeAt(0) - e;
+        });
+
+        // convert arabic indic digits [٠١٢٣٤٥٦٧٨٩]
+        e = '٠'.charCodeAt(0);
+        str = str.replace(/[٠-٩]/g, function(t) {
+            return t.charCodeAt(0) - e;
+        });
+        return ((3/ 100) * str).toFixed(2);
+    }
 }
 
 const styles = StyleSheet.create({

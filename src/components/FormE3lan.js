@@ -81,6 +81,20 @@ class FormE3lan extends Component {
         //     Base64_   = [];
         // }
 
+        setTimeout(async () => {
+            let { status } = await Location.requestPermissionsAsync();
+            let location = await Location.getCurrentPositionAsync({});
+            this.setState({
+                initMap     : false,
+                mapRegion   : location.coords
+            });
+        }, 1000);
+
+       this.loadComponentData();
+
+    }
+
+    async loadComponentData(){
         I18nManager.forceRTL(true);
         this.setState({spinner : true});
 
@@ -169,15 +183,6 @@ class FormE3lan extends Component {
 
         }
 
-        setTimeout(async () => {
-            let { status } = await Location.requestPermissionsAsync();
-            let location = await Location.getCurrentPositionAsync({});
-            this.setState({
-                initMap     : false,
-                mapRegion   : location.coords
-            });
-        }, 1000);
-
     }
 
     getColors(){
@@ -199,7 +204,11 @@ class FormE3lan extends Component {
     }
 
     onFocus(){
-        this.componentDidMount();
+        this.loadComponentData();
+
+
+
+
     }
 
     renderImage(item, i) {
@@ -1059,6 +1068,7 @@ const styles = StyleSheet.create({
         borderRadius          : 10
     },
     viewPiker : {
+        width               : '100%',
         position            : 'relative',
         marginVertical      : 10,
         alignItems          : 'center',

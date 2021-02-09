@@ -7,7 +7,7 @@
       "ios",
       "android"
     ],
-    "version": "2.0.9",
+    "version": "3.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -47,7 +47,7 @@
         "READ_EXTERNAL_STORAGE",
         "READ_INTERNAL_STORAGE",
         "WRITE_EXTERNAL_STORAGE"],
-      "versionCode": 8,
+      "versionCode": 10,
       "config": {
         "googleMaps": {
           "apiKey": "AIzaSyBCtrxqozj9xLkL58Frh0Gl4fiQZ_oATZI"
