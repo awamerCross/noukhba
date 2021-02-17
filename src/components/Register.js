@@ -212,9 +212,15 @@ class Register extends Component {
           }
       });
 
-      if(response.data.success === true){
-        this.props.navigation.navigate('activeacount',{ user_id : response.data.data.user.id});
+      if(response.data.data.user.active == 1){
+          this.props.navigation.navigate('login');
+      }else {
+          this.props.navigation.navigate('activeacount',{ user_id : response.data.data.user.id});
       }
+
+          // if(response.data.success === true){
+          //     this.props.navigation.navigate('login');
+          // }
 
       }).catch(err => {
         console.log(err);
